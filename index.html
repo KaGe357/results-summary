@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Frontend Mentor | Results summary component</title>
+
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+      @font-face {
+        font-family: "Hanken Grotesk";
+        src: url("./fonts/HankenGrotesk-VariableFont_wght.ttf")
+          format("truetype");
+        font-weight: normal;
+        font-style: normal;
+      }
+      body {
+        font-family: "Henken Grotesk", sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="first-box">
+        <h1 id="userResult">Your Result</h1>
+        <div class="circle-in-box">
+          <h2 class="result">76</h2>
+          <h3 class="max">of 100</h3>
+        </div>
+        <p id="great">Great</p>
+        <p>You scored higher than 65% of the people who have taken these tests.</p>
+      </div>
+      <div class="second-box">
+        <h2 id="summary">Summary</h2>
+        <ul>
+          <div class="summary-box box1">
+            <li>
+              <div class="label">
+              <img src="./assets/images/icon-reaction.svg" alt="reaction icon"/>
+              Reaction 
+            </div>
+              <div class="score"><span id="bold">80</span> / 100</div>
+            </li>
+          </div>
+          <div class="summary-box box2">
+            <li>
+              <div class="label">
+              <img src="./assets/images/icon-memory.svg" alt="memory icon"/>
+              Memory 
+            </div>
+              <div class="score"><span id="bold">92</span> / 100</div>
+            </li>
+          </div>
+          <div class="box summary-box box3">
+            <li>
+              <div class="label">
+              <img src="./assets/images/icon-verbal.svg" alt="verbal icon"/>
+                Verbal 
+              </div>
+                <div class="score"><span id="bold">61</span> / 100</div>
+            </li>
+          </div>
+          <div class="box summary-box box4">
+            <li>
+              <div class="label">
+              <img src="./assets/images/icon-visual.svg" alt="visual icon"/>
+              Visual 
+            </div>
+              <div class="score"><span id="bold">72</span> / 100</div>
+            </li>
+          </div>
+        </ul>
+        <button class="button-continue">Continue</button>
+      </div>
+    </div>
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="https://github.com/KaGe357">KaGe</a>.
+    </div>
+  </body>
+</html>
